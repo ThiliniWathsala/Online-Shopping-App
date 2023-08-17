@@ -1,14 +1,19 @@
 const express = require('express');
-const cors = require('cors');
-
 const app = express();
 
-app.use(express.json);
-app.use(cors());
+const cors = require('cors');
 
-const port = process.env.PORT || 5000;
+app.use(cors());  // word as middle ware to connect client
+app.use(express.json());  // to access req body
 
 
-app.listen(port,()=>{
-    console.log(`server logged in port ${port}` )
-})
+const serverRouter = require('./auraServer/routes/app');
+
+app.use("/server",serverRouter)
+
+
+const port = 5000;
+
+
+app.listen(port,
+    console.log(`server logged in port ${port}` ))
