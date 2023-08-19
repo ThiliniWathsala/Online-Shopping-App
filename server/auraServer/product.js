@@ -4,21 +4,21 @@ const product = [
         name: "iPhone 12 Pro",
         desc: "6.1-inch display",
         price: 899,
-        image: ""
+        image: "https://res.cloudinary.com/dfp4fnuxj/image/upload/v1692322410/shopping%20cart/iphone12_duqyti.jpg"
     },
     {
         id:2,
         name: "iPhone 12",
         desc: "5.4-inch display",
         price: 699,
-        image: ""
+        image: "https://res.cloudinary.com/dfp4fnuxj/image/upload/v1692322410/shopping%20cart/iphone12_duqyti.jpg"
     },
     {
         id:3,
         name: "Galaxy S",
         desc: "6.5-inch display",
         price: 399,
-        image: ""
+        image: "https://res.cloudinary.com/dfp4fnuxj/image/upload/v1692322411/shopping%20cart/galaxyS_z3nhkf.png"
     },
 ]
 
