@@ -11,10 +11,10 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
-    <div className="App scrollbar-none">
+    <div className="w-auto scroll-none">
       <Router>
         <ToastContainer />
-        <NavBar className="fixed" />
+        <NavBar />
         <Routes>
           <Route path='/cart' exact element={<Cart />} />
           <Route path='/not-found' exact element={<NotFound />} />

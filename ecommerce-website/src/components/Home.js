@@ -18,14 +18,16 @@ function Home() {
  }
  
   return (
-    <div className='px-10 overflow-y-auto h-50 md:overflow-scrol px-auto text'>
+    <div className=''>
+    <div className='pt-10 px-10 px-auto'>
       {isFetching? <p>Loading</p>: error? <p>error occured</p>: 
         <div className=''>
         <h1 className='text-sm sm:text-xs md:text-2xl lg:text-3xl font-bold font-sans font-serif mb-10 mt-10 text-center'>New Arrivals</h1>
-        <div  className='relative grid justify-items-center gap-8  grid-flow-row-dense items-center grid-cols-1 grid-rows-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5'>
-            {data?.map((product)=>{
+        <div className=''></div>
+        <div className='grid justify-items-center gap-8  grid-flow-row-dense items-center grid-cols-1 grid-rows-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5'>
+            {data?.map((product, index)=>{
             return(
-              <div className='shadow-lg shadow-gray-400 rounded-lg mb-10 w-auto h-auto md:w-auto flex flex-col justify-between'>
+              <div key={index} className='shadow-lg shadow-gray-400 rounded-lg mb-10 w-auto h-auto md:w-auto flex flex-col justify-between'>
                  <div className='h-auto w-auto' key={product.id}>
                     <h3 className='h-2/12 text-center'>{product.name}</h3>
                     <img className='h-45 sm:h-80 w-auto' src={product.image}/>
@@ -42,6 +44,8 @@ function Home() {
         </div>
       }
     </div>
+    </div>
+    
   )
 }
 
