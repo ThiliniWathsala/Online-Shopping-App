@@ -42,7 +42,7 @@ const navigate = useNavigate();
             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
               <div className="flex flex-shrink-0 items-center">
                 <img
-                  className="h-8 w-auto"
+                  className="h-8 w-auto invisible sm:visible"
                   src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
                   alt="Your Company"
                 />
@@ -83,7 +83,7 @@ const navigate = useNavigate();
                 <span className="sr-only">View notifications</span>
                 <ShoppingCartIcon className="h-6 w-6" aria-hidden="true" />
               </button> */}
-              <div className='h-5 w-5 mr-3 mb-6 rounded-2xl bg-red-500 text-cyan-50 inline-block align-middle justify-center text-sm'  >3</div>
+              <div className='h-5 w-5 mr-3 mb-6 rounded-2xl bg-red-500 text-cyan-50 inline-block align-middle justify-center text-sm text-center'  >3</div>
 
               <button
                 type="button"
@@ -93,7 +93,7 @@ const navigate = useNavigate();
                 <span className="sr-only">View notifications</span>
                 <BellIcon className="h-6 w-6" aria-hidden="true" />
               </button>
-              <div className='h-5 w-5 mr-3 mb-6 rounded-2xl bg-red-500 text-cyan-50 inline-block align-middle justify-center text-sm'>3</div>
+              <div className='h-5 w-5 mr-3 mb-6 rounded-2xl bg-red-500 text-cyan-50 inline-block align-middle justify-center text-sm text-center'>3</div>
 
               {/* Profile dropdown */}
               <Menu as="div" className="relative ml-3">
